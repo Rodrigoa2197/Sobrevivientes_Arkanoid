@@ -1,0 +1,10 @@
+C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\bin\Debug\ProyectoPoo.exe.config
+C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\bin\Debug\ProyectoPoo.exe
+C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\bin\Debug\ProyectoPoo.pdb
+C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\obj\Debug\ProyectoPoo.csprojAssemblyReference.cache
+C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\obj\Debug\ProyectoPoo.Properties.Resources.resources
+C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\obj\Debug\ProyectoPoo.csproj.GenerateResource.cache
+C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\obj\Debug\ProyectoPoo.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\obj\Debug\ProyectoPoo.exe
+C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\obj\Debug\ProyectoPoo.pdb
+C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\obj\Debug\ProyectoPoo.Form1.resources
