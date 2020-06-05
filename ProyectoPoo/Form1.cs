@@ -17,6 +17,19 @@ namespace ProyectoPoo
             InitializeComponent();
         }
 
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmRegister window = new frmRegister();
+            window.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmTop frame = new frmTop();
+            frame.ShowDialog();
+            
+        }
     }
 }
