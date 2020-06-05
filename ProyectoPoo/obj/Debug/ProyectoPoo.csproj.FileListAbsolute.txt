@@ -8,3 +8,12 @@ C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\obj\Debug\ProyectoPoo.csproj.Core
 C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\obj\Debug\ProyectoPoo.exe
 C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\obj\Debug\ProyectoPoo.pdb
 C:\Users\HP\Documents\Proyecto POO\ProyectoPoo\obj\Debug\ProyectoPoo.Form1.resources
+C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\ProyectoPoo.exe.config
+C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\ProyectoPoo.exe
+C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\ProyectoPoo.pdb
+C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.csprojAssemblyReference.cache
+C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.Form1.resources
+C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.Properties.Resources.resources
+C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.csproj.GenerateResource.cache
+C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.exe
+C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.pdb
