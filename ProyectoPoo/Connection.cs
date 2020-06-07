@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using Npgsql;
+
 namespace ProyectoPoo
 {
     public static class Connection
