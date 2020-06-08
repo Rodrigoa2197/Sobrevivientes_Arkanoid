@@ -48,7 +48,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(219, 248);
+            this.button1.Location = new System.Drawing.Point(315, 248);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(329, 104);
             this.button1.TabIndex = 0;
@@ -68,7 +68,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(219, 393);
+            this.button2.Location = new System.Drawing.Point(315, 393);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(341, 115);
             this.button2.TabIndex = 1;
@@ -88,7 +88,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(219, 516);
+            this.button3.Location = new System.Drawing.Point(315, 516);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(341, 155);
             this.button3.TabIndex = 2;
@@ -102,7 +102,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(767, 644);
+            this.ClientSize = new System.Drawing.Size(958, 644);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
