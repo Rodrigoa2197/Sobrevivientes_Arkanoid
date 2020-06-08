@@ -15,6 +15,9 @@ namespace ProyectoPoo
         public Form1()
         {
             InitializeComponent();
+            Height = ClientSize.Height;
+            Width = ClientSize.Width;
+            WindowState = FormWindowState.Maximized;
         }
 
 
