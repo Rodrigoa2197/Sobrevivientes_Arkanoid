@@ -114,3 +114,4 @@ C:\Users\Lenovo\Desktop\Proyecto arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\ob
 C:\Users\Lenovo\Desktop\Proyecto arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.pdb
 C:\Users\Lenovo\Desktop\Proyecto arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmLevel.resources
 C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmLevel.resources
+C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmLevel.resources

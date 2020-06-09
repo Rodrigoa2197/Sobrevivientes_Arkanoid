@@ -11,5 +11,19 @@ namespace ProyectoPoo
             Width = ClientSize.Width;
             WindowState = FormWindowState.Maximized;
         }
+
+        private void frmLevel_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void frmLevel_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("¿Seguro que desea salir?", 
+                "ARKANOID GAME", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

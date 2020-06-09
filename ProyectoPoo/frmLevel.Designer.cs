@@ -40,6 +40,8 @@ namespace ProyectoPoo
             this.ClientSize = new System.Drawing.Size(933, 519);
             this.Name = "frmLevel";
             this.Text = "frmLevel";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLevel_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLevel_FormClosed);
             this.ResumeLayout(false);
         }
 

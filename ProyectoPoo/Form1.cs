@@ -39,5 +39,19 @@ namespace ProyectoPoo
         {
             this.Close();
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {         
+            if (MessageBox.Show("¿Seguro que desea salir?", 
+                "ARKANOID GAME", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
