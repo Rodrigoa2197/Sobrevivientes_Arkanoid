@@ -28,7 +28,7 @@ namespace ProyectoPoo
 
         private void frmRegister_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            
         }
 
         private void frmRegister_FormClosing(object sender, FormClosingEventArgs e)
