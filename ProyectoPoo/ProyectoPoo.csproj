@@ -89,11 +89,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.cs" />
+    <Compile Include="CustomPictureBox.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDesign.Designer.cs">
+      <DependentUpon>frmDesign.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLevel.cs">
       <SubType>Form</SubType>
@@ -118,6 +125,9 @@
     <Compile Include="UsuarioDAO.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDesign.resx">
+      <DependentUpon>frmDesign.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLevel.resx">
       <DependentUpon>frmLevel.cs</DependentUpon>

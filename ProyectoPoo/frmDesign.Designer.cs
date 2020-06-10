@@ -2,7 +2,7 @@
 
 namespace ProyectoPoo
 {
-    partial class frmLevel
+    partial class frmDesign
     {
         /// <summary>
         /// Required designer variable.
@@ -33,15 +33,14 @@ namespace ProyectoPoo
         {
             this.SuspendLayout();
             // 
-            // frmLevel
+            // frmDesign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "frmLevel";
-            this.Text = "frmLevel";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLevel_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLevel_FormClosed);
+            this.Name = "frmDesign";
+            this.Text = "frmDesign";
+            this.Load += new System.EventHandler(this.frmDesign_Load);
             this.ResumeLayout(false);
         }
 

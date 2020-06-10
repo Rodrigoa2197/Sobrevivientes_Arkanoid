@@ -150,3 +150,4 @@ C:\Users\campe\Documents\Proyecto final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\
 C:\Users\campe\Documents\Proyecto final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.csproj.CopyComplete
 C:\Users\campe\Documents\Proyecto final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.exe
 C:\Users\campe\Documents\Proyecto final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.pdb
+C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmDesign.resources

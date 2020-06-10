@@ -8,9 +8,8 @@ namespace ProyectoPoo
         private static string host = "127.0.0.1",
             database = "ProyectoPoo",
             userId = "postgres",
-        //   password = "uca";
-          password = "00303318";
-        //  password = "gaseosa1234";
+            password = "uca";
+         
         
             private static string sConnection =
             $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";

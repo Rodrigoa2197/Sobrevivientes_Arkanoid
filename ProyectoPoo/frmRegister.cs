@@ -16,13 +16,13 @@ namespace ProyectoPoo
         
         private void button2_Click(object sender, EventArgs e)
         {
-            frmLevel window = new frmLevel();
             
             UsuarioDAO.CreateNew(textBox1.Text);
             MessageBox.Show("Usuario agregado con exito!",
                 "Welcome to the game!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
-            window.Show();
+            frmDesign design = new frmDesign();
+            design.Show();
             this.Hide();
         }
 
