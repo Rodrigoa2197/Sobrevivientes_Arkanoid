@@ -2,14 +2,14 @@
 
 namespace ProyectoPoo
 {
-    partial class frmLevel
+    partial class Uc_Top
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -23,7 +23,7 @@ namespace ProyectoPoo
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -31,17 +31,17 @@ namespace ProyectoPoo
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Uc_Top));
             this.SuspendLayout();
             // 
-            // frmLevel
+            // Uc_Top
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "frmLevel";
-            this.Text = "frmLevel";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLevel_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLevel_FormClosed);
+            this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
+            this.DoubleBuffered = true;
+            this.Name = "Uc_Top";
+            this.Size = new System.Drawing.Size(457, 556);
             this.ResumeLayout(false);
         }
 
