@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace ProyectoPoo
@@ -24,6 +25,7 @@ namespace ProyectoPoo
 
         private void LoadTile()
         {
+            
             int xAxis = 10;
             int yAxis = 5;
 
@@ -47,7 +49,7 @@ namespace ProyectoPoo
                     cpb[i, j].Left = j * pbWidth;
                     cpb[i, j].Top = i * pbHeight;
                     
-                    cpb[i,j].BackgroundImage = Image.FromFile("../../../Res/"+ (i + 1) + ".png");
+                    cpb[i,j].BackgroundImage = Image.FromFile("../../../Res/" + (i + 1) + ".png");
                     cpb[i, j].BackgroundImageLayout = ImageLayout.Stretch;
                     
                     cpb[i,j].Tag = "titleTag";
