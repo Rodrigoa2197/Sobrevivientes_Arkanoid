@@ -151,3 +151,4 @@ C:\Users\campe\Documents\Proyecto final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\
 C:\Users\campe\Documents\Proyecto final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.exe
 C:\Users\campe\Documents\Proyecto final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.pdb
 C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmDesign.resources
+C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmDesign.resources

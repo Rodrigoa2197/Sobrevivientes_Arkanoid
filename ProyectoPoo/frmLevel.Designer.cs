@@ -35,9 +35,10 @@ namespace ProyectoPoo
             // 
             // frmLevel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 692);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmLevel";
             this.Text = "frmLevel";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLevel_FormClosing);
