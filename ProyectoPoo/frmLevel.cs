@@ -1,11 +1,10 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace ProyectoPoo
 {
-    public partial class frmTop : Form
+    public partial class frmLevel : Form
     {
-        public frmTop()
+        public frmLevel()
         {
             InitializeComponent();
             Height = ClientSize.Height;
@@ -13,13 +12,12 @@ namespace ProyectoPoo
             WindowState = FormWindowState.Maximized;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void frmLevel_FormClosed(object sender, FormClosedEventArgs e)
         {
-            var dt = Connection.ExecuteQuery("SELECT * FROM PUNTAJE");
-            dataGridView1.DataSource = dt;
+            
         }
-        
-        private void frmTop_FormClosing(object sender, FormClosingEventArgs e)
+
+        private void frmLevel_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("¿Seguro que desea salir? ", 
                 "ARKANOID GAME ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)

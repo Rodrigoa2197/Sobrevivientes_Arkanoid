@@ -46,11 +46,17 @@ namespace ProyectoPoo
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(245, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(450, 87);
+=======
+            this.label1.Location = new System.Drawing.Point(125, 107);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(743, 87);
+>>>>>>> eb75b2d01e8614e12fc4fd3db5f67da0ac2b81bd
             this.label1.TabIndex = 0;
-            this.label1.Text = "USUARIO";
+            this.label1.Text = "INGRESE SU NOMBRE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox1
@@ -73,9 +79,15 @@ namespace ProyectoPoo
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+<<<<<<< HEAD
             this.button2.Location = new System.Drawing.Point(304, 496);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(339, 89);
+=======
+            this.button2.Location = new System.Drawing.Point(304, 497);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(339, 88);
+>>>>>>> eb75b2d01e8614e12fc4fd3db5f67da0ac2b81bd
             this.button2.TabIndex = 3;
             this.button2.Text = "INICIAR";
             this.button2.UseVisualStyleBackColor = false;
@@ -96,7 +108,6 @@ namespace ProyectoPoo
             this.Text = "frmRegister";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmRegister_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmRegister_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
         }

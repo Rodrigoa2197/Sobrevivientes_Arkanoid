@@ -113,6 +113,7 @@ namespace ProyectoPoo
            this.DoubleBuffered = true;
            this.Name = "ControlTop";
            this.Size = new System.Drawing.Size(534, 589);
+           this.Load += new System.EventHandler(this.ControlTop_Load);
            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
            this.ResumeLayout(false);
        }
