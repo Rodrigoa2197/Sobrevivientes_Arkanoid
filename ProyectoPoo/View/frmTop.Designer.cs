@@ -45,6 +45,7 @@ namespace ProyectoPoo
             this.dataGridView1.ColumnHeadersHeightSizeMode =
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(51, 231);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(406, 538);
             this.dataGridView1.TabIndex = 0;
@@ -70,6 +71,7 @@ namespace ProyectoPoo
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button1.Location = new System.Drawing.Point(282, 163);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 48);
             this.button1.TabIndex = 2;
@@ -88,6 +90,7 @@ namespace ProyectoPoo
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "frmTop";
             this.Text = "frmTop";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTop_FormClosing);
