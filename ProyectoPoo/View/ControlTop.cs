@@ -11,7 +11,8 @@ namespace ProyectoPoo
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            var dt = Connection.ExecuteQuery("SELECT * FROM PUNTAJE");
+            dataGridView1.DataSource = dt;
         }
 
 
