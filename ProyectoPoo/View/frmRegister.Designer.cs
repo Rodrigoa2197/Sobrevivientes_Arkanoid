@@ -42,18 +42,11 @@ namespace ProyectoPoo
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-<<<<<<< HEAD
-            this.label1.Location = new System.Drawing.Point(125, 107);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(743, 87);
-=======
             this.label1.Location = new System.Drawing.Point(86, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(637, 148);
->>>>>>> 964ec0c0b09acca22b1d997b0f3ca5a031304789
             this.label1.TabIndex = 0;
             this.label1.Text = "INGRESE SU USUARIO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -75,14 +68,9 @@ namespace ProyectoPoo
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-<<<<<<< HEAD
-            this.button2.Location = new System.Drawing.Point(304, 497);
-=======
             this.button2.Location = new System.Drawing.Point(261, 431);
->>>>>>> 964ec0c0b09acca22b1d997b0f3ca5a031304789
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(291, 76);
             this.button2.TabIndex = 3;
