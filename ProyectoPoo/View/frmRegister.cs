@@ -16,13 +16,22 @@ namespace ProyectoPoo
         
         private void button2_Click(object sender, EventArgs e)
         {
-            UsuarioDAO.CreateNew(textBox1.Text);
-            MessageBox.Show("Usuario agregado exitosamente!",
-                "Welcome to our game! ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (textBox1.Text.Length >= 2)
+            {
+                UsuarioDAO.CreateNew(textBox1.Text);
+                MessageBox.Show("Usuario agregado exitosamente! ",
+                    "Welcome to our game! ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
-            frmDesign design = new frmDesign();
-            design.Show();
-            this.Hide();
+                frmDesign design = new frmDesign();
+                
+                design.Show();
+                this.Hide();
+
+            }
+            else
+            {
+                MessageBox.Show("Nombre de usuario tiene que ser mayor a dos caracteres ");
+            }
         }
         
         private void frmRegister_FormClosing(object sender, FormClosingEventArgs e)

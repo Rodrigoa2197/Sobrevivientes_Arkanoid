@@ -155,3 +155,4 @@ C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug
 C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.exe
 C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.pdb
 >>>>>>> refs/remotes/origin/master
+C:\Users\campe\Documents\Proyecto final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.ControlTop.resources

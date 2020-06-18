@@ -3,14 +3,14 @@
     public class Score
     {
         public int ScoreID { get; }
-        public int score { get; set; }
-        public string nickname { get; set; }
+        public int puntuacion { get; set; }
+        public string usuario { get; set; }
 
         public Score()
         {
             ScoreID = 0;
-            score = 0;
-            nickname = "";
+            puntuacion = 0;
+            usuario = "";
         }
     }
 }

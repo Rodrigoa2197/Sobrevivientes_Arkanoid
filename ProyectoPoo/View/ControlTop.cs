@@ -15,6 +15,10 @@ namespace ProyectoPoo
         }
 
 
-
+        private void ControlTop_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = ScoreDAO.Top10();
+        }
     }
 }
