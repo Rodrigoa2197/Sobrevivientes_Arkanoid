@@ -144,12 +144,10 @@ C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug
 C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.Form1.resources
 C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmDesign.resources
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmDesign.resources
 =======
 C:\Users\campe\Documents\Proyecto final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmDesign.resources
 >>>>>>> eb75b2d01e8614e12fc4fd3db5f67da0ac2b81bd
-=======
 C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmRegister.resources
 C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmTop.resources
 C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.Properties.Resources.resources
@@ -159,7 +157,5 @@ C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug
 C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.exe
 C:\Users\HP\Documents\Proyecto POO\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.pdb
 >>>>>>> refs/remotes/origin/master
-<<<<<<< HEAD
-=======
 C:\Users\campe\Documents\Proyecto final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.ControlTop.resources
->>>>>>> eb75b2d01e8614e12fc4fd3db5f67da0ac2b81bd
+C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.ControlTop.resources

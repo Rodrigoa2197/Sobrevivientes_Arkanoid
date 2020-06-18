@@ -91,10 +91,10 @@
     <Compile Include="Model\Connection.cs" />
     <Compile Include="Model\CustomPictureBox.cs" />
     <Compile Include="Model\DatosJuego.cs" />
-    <Compile Include="Model\Program.cs" />
     <Compile Include="Model\Score.cs" />
     <Compile Include="Model\ScoreDAO.cs" />
     <Compile Include="Model\UsuarioDAO.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\ControlTop.cs">
       <SubType>UserControl</SubType>
