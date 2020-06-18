@@ -17,8 +17,6 @@ namespace ProyectoPoo
 
         private void frmDesign_Load(object sender, EventArgs e)
         {
-            
-            
             LoadTile();
         }
 
@@ -50,13 +48,10 @@ namespace ProyectoPoo
                     cpb[i,j].BackgroundImage = Image.FromFile("../../../Res/"+ (i + 1) + ".png");
                     cpb[i, j].BackgroundImageLayout = ImageLayout.Stretch;
                     
-                    cpb[i,j].Tag = "titleTag";
+                    cpb[i,j].Tag = "titleTag ";
                     Controls.Add(cpb[i,j]);
                 }
             }
         }
-        
-        
-            
-        }
     }
+}

@@ -15,19 +15,14 @@ namespace ProyectoPoo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            var dt = Connection.ExecuteQuery("SELECT * FROM PUNTAJE");
+            dataGridView1.DataSource = dt;
         }
-
-
-        private void frmTop_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            
-        }
-
+        
         private void frmTop_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("¿Seguro que desea salir?", 
-                "ARKANOID GAME", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            if (MessageBox.Show("¿Seguro que desea salir? ", 
+                "ARKANOID GAME ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
                 e.Cancel = true;
             }

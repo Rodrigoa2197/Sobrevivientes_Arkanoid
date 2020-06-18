@@ -19,8 +19,7 @@ namespace ProyectoPoo
             Width = ClientSize.Width;
             WindowState = FormWindowState.Maximized;
         }
-
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             frmRegister window = new frmRegister();
@@ -47,8 +46,8 @@ namespace ProyectoPoo
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {         
-            if (MessageBox.Show("¿Seguro que desea salir?", 
-                "ARKANOID GAME", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            if (MessageBox.Show("¿Seguro que desea salir? ", 
+                "ARKANOID GAME ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
                 e.Cancel = true;
             }
