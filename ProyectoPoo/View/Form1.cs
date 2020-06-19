@@ -12,6 +12,7 @@ namespace ProyectoPoo
 {
     public partial class Form1 : Form
     {
+        private Player currentPlayer;
         public Form1()
         {
             InitializeComponent();
@@ -24,13 +25,35 @@ namespace ProyectoPoo
         {
             frmRegister window = new frmRegister();
             window.Show();
-            this.Hide();
+            window.gn = (string user) =>
+            {
+                if (PlayerDAO.CreateNewPlayer(user))
+                {
+                    MessageBox.Show($"Bienvenido Nuevamente {user}");
+                }
+                else
+                {
+                    MessageBox.Show($"Gracias por registrarte {user}");
+                }
+                currentPlayer = new Player(user,0);
+                window.Dispose();
+                frmDesign design = new frmDesign();
+                design.Show();
+                this.Hide();
+            };
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            // Se ha agregado un metodo lambda para que habra una ventana aparte y no simultaneamente
             frmTop frame = new frmTop();
-            frame.ShowDialog();
+            frame.CloseAction = () =>
+            {
+                Show();
+            };
+            frame.Show();
+            Hide();
             
         }
 

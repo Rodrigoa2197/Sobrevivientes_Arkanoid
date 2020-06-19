@@ -1,11 +1,12 @@
 CREATE TABLE USUARIO(
-	usuario VARCHAR(100) PRIMARY KEY
+	id_usuario SERIAL PRIMARY KEY,
+	usuario VARCHAR(100) UNIQUE NOT NULL
 );
 
 CREATE TABLE PUNTAJE(
 	id_Puntaje SERIAL PRIMARY KEY,
-	usuario VARCHAR(100) NOT NULL,
-	puntaje BIGINT NOT NULL,
+	id_usuario INT NOT NULL,
+	puntaje INT NOT NULL,
 	CONSTRAINT fk_usuario_puntaje
-	FOREIGN KEY (usuario) REFERENCES USUARIO(usuario) 
+	FOREIGN KEY (id_usuario) REFERENCES USUARIO(id_usuario) 
 );
