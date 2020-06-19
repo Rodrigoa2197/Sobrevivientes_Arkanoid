@@ -12,6 +12,7 @@ namespace ProyectoPoo
 {
     public partial class Form1 : Form
     {
+        private ControlTop ct;
         public Form1()
         {
             InitializeComponent();
