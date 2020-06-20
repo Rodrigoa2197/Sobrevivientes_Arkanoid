@@ -31,8 +31,7 @@ namespace ProyectoPoo
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources =
-                new System.ComponentModel.ComponentResourceManager(typeof(frmRegister));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegister));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -43,12 +42,11 @@ namespace ProyectoPoo
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(100, 53);
+            this.label1.Location = new System.Drawing.Point(86, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(743, 171);
+            this.label1.Size = new System.Drawing.Size(637, 148);
             this.label1.TabIndex = 0;
             this.label1.Text = "INGRESE SU USUARIO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -56,9 +54,9 @@ namespace ProyectoPoo
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(334, 357);
+            this.textBox1.Location = new System.Drawing.Point(286, 309);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(269, 23);
+            this.textBox1.Size = new System.Drawing.Size(231, 20);
             this.textBox1.TabIndex = 1;
             // 
             // button2
@@ -70,12 +68,11 @@ namespace ProyectoPoo
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(304, 497);
+            this.button2.Location = new System.Drawing.Point(261, 431);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(339, 88);
+            this.button2.Size = new System.Drawing.Size(291, 76);
             this.button2.TabIndex = 3;
             this.button2.Text = "INICIAR";
             this.button2.UseVisualStyleBackColor = false;
@@ -83,11 +80,11 @@ namespace ProyectoPoo
             // 
             // frmRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(930, 629);
+            this.ClientSize = new System.Drawing.Size(797, 545);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
