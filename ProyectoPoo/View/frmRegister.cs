@@ -6,6 +6,8 @@ namespace ProyectoPoo
 {
     public partial class frmRegister : Form
     {
+        public delegate void GetUsuario(string text);
+        public GetUsuario gn;
         public frmRegister()
         {
             InitializeComponent();
@@ -16,21 +18,9 @@ namespace ProyectoPoo
         
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length >= 2)
+            if (textBox1.Text.Length != 0)
             {
-                UsuarioDAO.CreateNew(textBox1.Text);
-                MessageBox.Show("Usuario agregado exitosamente! ",
-                    "Welcome to our game! ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
-                frmDesign design = new frmDesign();
-                
-                design.Show();
-                this.Hide();
-
-            }
-            else
-            {
-                MessageBox.Show("Nombre de usuario tiene que ser mayor a dos caracteres ");
+                gn?.Invoke(textBox1.Text);
             }
         }
         
