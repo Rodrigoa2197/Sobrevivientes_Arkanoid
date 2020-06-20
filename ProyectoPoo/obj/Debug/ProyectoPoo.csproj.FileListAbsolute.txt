@@ -33,3 +33,39 @@ C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\Pro
 C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.csproj.CopyComplete
 C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.exe
 C:\POO_00303318\Proyecto Final\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.pdb
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\ProyectoPoo.exe.config
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\ProyectoPoo.pdb
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\Npgsql.dll
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Buffers.dll
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Memory.dll
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Text.Json.dll
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.ValueTuple.dll
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\Npgsql.pdb
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\Npgsql.xml
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Buffers.xml
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Memory.xml
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Text.Json.xml
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\bin\Debug\System.ValueTuple.xml
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.exe.config
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.ControlTop.resources
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.Form1.resources
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmDesign.resources
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmRegister.resources
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.frmTop.resources
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.exe
+C:\Users\Lenovo\Desktop\Arkanoid\Sobrevivientes_Arkanoid\ProyectoPoo\obj\Debug\ProyectoPoo.pdb
