@@ -273,11 +273,7 @@ namespace ProyectoPoo
 
                         return;
                     }
-
-
                 }
-
-
             }
         }
 
@@ -382,6 +378,13 @@ namespace ProyectoPoo
 
             scorePanel.Controls.Remove(hearts[DatosJuego.lifes]);
             hearts[DatosJuego.lifes] = null;
+            if (DatosJuego.lifes == 0)
+            {
+                MessageBox.Show("Ha perdido!");
+                Form1 window = new Form1();
+                window.Show();
+                this.Hide();
+            }
         }
         
         

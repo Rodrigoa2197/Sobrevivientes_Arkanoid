@@ -13,26 +13,53 @@ namespace ProyectoPoo
     public partial class Form1 : Form
     {
         private ControlTop ct;
+        private Player currentPlayer;
+
         public Form1()
         {
             InitializeComponent();
             Height = ClientSize.Height;
             Width = ClientSize.Width;
             WindowState = FormWindowState.Maximized;
+            ct = new ControlTop();
         }
         
         private void button1_Click(object sender, EventArgs e)
         {
             frmRegister window = new frmRegister();
             window.Show();
-            this.Hide();
+            window.gn = (string user) =>
+            {
+                if (PlayerDAO.CreateNewPlayer(user))
+                {
+                    MessageBox.Show($"Bienvenido Nuevamente {user}");
+                }
+                else
+                {
+                    MessageBox.Show($"Gracias por registrarte {user}");
+                }
+                currentPlayer = new Player(user,0);
+                window.Dispose();
+                frmDesign design = new frmDesign();
+                design.Show();
+                this.Hide();
+            };
+
+        }
+
+        private void OnclickButtonB(object sender, EventArgs e)
+        {
+            ct.Hide();
+            this.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmTop frame = new frmTop();
-            frame.ShowDialog();
-            
+            this.Hide();
+            ct.ControlTop_Load(sender,e);
+            ct.Show();
+           
+
         }
 
         private void button3_Click(object sender, EventArgs e)

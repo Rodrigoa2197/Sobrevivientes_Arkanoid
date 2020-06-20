@@ -6,10 +6,11 @@ namespace ProyectoPoo
     public static class Connection
     {
         private static string host = "127.0.0.1",
-            database = "ProyectoPoo",
+            database = "POOproyecto",
             userId = "postgres",
             password = "uca";
-        
+           
+
             private static string sConnection =
             $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";
         
