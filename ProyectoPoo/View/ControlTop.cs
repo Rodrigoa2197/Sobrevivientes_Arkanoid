@@ -51,7 +51,7 @@ namespace ProyectoPoo
 
         private void button1_Click(object sender, EventArgs e)
         {
-          OnClickButton?.Invoke(this,e);
+            this.Hide();
         }
     }
 }
