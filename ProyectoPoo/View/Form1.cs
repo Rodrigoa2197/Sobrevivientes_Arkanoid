@@ -12,8 +12,8 @@ namespace ProyectoPoo
 {
     public partial class Form1 : Form
     {
-        private ControlTop ct;
-        private Player currentPlayer;
+        private Player currentPlayer; 
+        UserControl ct = new ControlTop();
 
         public Form1()
         {
@@ -21,7 +21,6 @@ namespace ProyectoPoo
             Height = ClientSize.Height;
             Width = ClientSize.Width;
             WindowState = FormWindowState.Maximized;
-            ct = new ControlTop();
         }
         
         private void button1_Click(object sender, EventArgs e)
@@ -47,19 +46,10 @@ namespace ProyectoPoo
 
         }
 
-        private void OnclickButtonB(object sender, EventArgs e)
-        {
-            ct.Hide();
-            this.Show();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ct.ControlTop_Load(sender,e);
-            ct.Show();
-           
-
+            tableLayoutPanel1.Controls.Remove(tableLayoutPanel1);
+            tableLayoutPanel1.Controls.Add(new ControlTop());
         }
 
         private void button3_Click(object sender, EventArgs e)
