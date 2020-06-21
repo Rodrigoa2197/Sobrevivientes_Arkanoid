@@ -7,12 +7,15 @@ namespace ProyectoPoo
     public partial class ControlTop : UserControl
     {
         private Label[,] players;
+
+        public delegate void EventControlT(object sender, EventArgs e);
+        public EventControlT OnClickButton;
         public ControlTop()
         {
             InitializeComponent(); 
         }
 
-        private void ControlTop_Load(object sender, EventArgs e)
+        public void ControlTop_Load(object sender, EventArgs e)
         {
             LoadPlayers();
         }
@@ -44,6 +47,11 @@ namespace ProyectoPoo
                     Controls.Add(players[i, j]);
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          OnClickButton?.Invoke(this,e);
         }
     }
 }

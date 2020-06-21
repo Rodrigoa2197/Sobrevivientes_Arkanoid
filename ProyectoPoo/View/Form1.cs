@@ -12,13 +12,16 @@ namespace ProyectoPoo
 {
     public partial class Form1 : Form
     {
+        private ControlTop ct;
         private Player currentPlayer;
+
         public Form1()
         {
             InitializeComponent();
             Height = ClientSize.Height;
             Width = ClientSize.Width;
             WindowState = FormWindowState.Maximized;
+            ct = new ControlTop();
         }
         
         private void button1_Click(object sender, EventArgs e)
@@ -44,17 +47,19 @@ namespace ProyectoPoo
 
         }
 
+        private void OnclickButtonB(object sender, EventArgs e)
+        {
+            ct.Hide();
+            this.Show();
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            // Se ha agregado un metodo lambda para que habra una ventana aparte y no simultaneamente
-            frmTop frame = new frmTop();
-            frame.CloseAction = () =>
-            {
-                Show();
-            };
-            frame.Show();
-            Hide();
-            
+            this.Hide();
+            ct.ControlTop_Load(sender,e);
+            ct.Show();
+           
+
         }
 
         private void button3_Click(object sender, EventArgs e)
