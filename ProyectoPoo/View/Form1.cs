@@ -23,7 +23,13 @@ namespace ProyectoPoo
             WindowState = FormWindowState.Maximized;
             ct = new ControlTop();
         }
-        
+         private void Form1_Load(object sender, EventArgs e)
+                {
+                    
+                    
+                    
+                    ct.OnClickButton += OnclickButtonB;
+                }
         private void button1_Click(object sender, EventArgs e)
         {
             frmRegister window = new frmRegister();
@@ -80,5 +86,7 @@ namespace ProyectoPoo
                 e.Cancel = true;
             }
         }
+
+       
     }
 }

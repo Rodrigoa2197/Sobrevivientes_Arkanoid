@@ -35,12 +35,12 @@ namespace ProyectoPoo
             // 
             // frmTop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(623, 693);
+            this.ClientSize = new System.Drawing.Size(534, 601);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmTop";
             this.Text = "frmTop";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTop_FormClosing);
