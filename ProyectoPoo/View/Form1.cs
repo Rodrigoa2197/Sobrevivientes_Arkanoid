@@ -46,10 +46,7 @@ namespace ProyectoPoo
                 frmDesign design = new frmDesign();
                 design.Show();
                 this.Hide();
-              
-              
             };
-
         }
         
         
