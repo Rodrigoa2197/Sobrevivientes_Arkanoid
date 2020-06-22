@@ -39,7 +39,7 @@ namespace ProyectoPoo
                         players[i, j].Text = playerList[i].Puntaje.ToString();
                         players[i, j].Left = Width / 2 + sampleLeft;
                     }
-                    players[i, j].Top = sampleTop + 65 * i;
+                    players[i, j].Top = sampleTop + 24 * i;
                     players[i, j].Height += 4;
                     players[i, j].Width += 30;
                     players[i, j].Font = new Font("Microsoft YaHei", 14F);

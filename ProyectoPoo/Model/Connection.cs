@@ -6,16 +6,14 @@ namespace ProyectoPoo
     public static class Connection
     {
         private static string host = "127.0.0.1",
-            database = "POOproyecto",
+            database = "ProyectoPoo",
+            //database = "POOproyecto",
             userId = "postgres",
-<<<<<<< HEAD
             //password = "gaseosa1234";
             password = "00303318";
-=======
-            password = "uca";
->>>>>>> refs/remotes/origin/master
-           
-        private static string sConnection =
+            //password = "uca";
+
+            private static string sConnection =
             $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";
         
         public static DataTable ExecuteQuery(string query)

@@ -414,19 +414,17 @@ namespace ProyectoPoo
             hearts[DatosJuego.lifes] = null;
             if (DatosJuego.lifes == 0)
             {
-                MessageBox.Show("Has perdido:(!");
+                MessageBox.Show("¡Has perdido :(!");
                 Form1 window = new Form1();
                 DatosJuego.lifes = 3;
                 DatosJuego.score = 0;
                 window.Show();
                 this.Hide();
             }
-
             if (remainingPb == 0)
             {
                 CheckGame();
             }
-            
         }
     }
 }
