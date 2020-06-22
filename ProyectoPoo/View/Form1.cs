@@ -12,9 +12,8 @@ namespace ProyectoPoo
 {
     public partial class Form1 : Form
     {
-        private Player currentPlayer; 
-        UserControl ct = new ControlTop();
-
+        private Player currentPlayer;
+        private frmDesign ds;
         public Form1()
         {
             InitializeComponent();
@@ -22,9 +21,14 @@ namespace ProyectoPoo
             Width = ClientSize.Width;
             WindowState = FormWindowState.Maximized;
         }
-        
+         private void Form1_Load(object sender, EventArgs e)
+                {
+                    
+                }
+         
         private void button1_Click(object sender, EventArgs e)
         {
+            ds = new frmDesign();
             frmRegister window = new frmRegister();
             window.Show();
             window.gn = (string user) =>
@@ -42,9 +46,13 @@ namespace ProyectoPoo
                 frmDesign design = new frmDesign();
                 design.Show();
                 this.Hide();
+              
+              
             };
 
         }
+        
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -70,5 +78,7 @@ namespace ProyectoPoo
                 e.Cancel = true;
             }
         }
+
+       
     }
 }
