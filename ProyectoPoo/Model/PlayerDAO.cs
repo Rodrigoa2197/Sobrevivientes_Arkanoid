@@ -32,10 +32,10 @@ namespace ProyectoPoo
         public static List<Player> ObtainTopPlayers()
         {
             var topPlayers = new List<Player>();
-            DataTable dt = Connection.ExecuteQuery("SELECT pl.usuario, sc.puntaje" +
-                                                        "FROM USUARIO pl, PUNTAJE sc" +
-                                                        "WHERE pl.id_usuario = sc.id_usuario" +
-                                                        "ORDER BY sc.puntaje DESC" +
+            DataTable dt = Connection.ExecuteQuery("SELECT pl.usuario, sc.puntaje " +
+                                                        "FROM USUARIO pl, PUNTAJE sc " +
+                                                        "WHERE pl.id_usuario = sc.id_usuario " +
+                                                        "ORDER BY sc.puntaje DESC " +
                                                         "LIMIT 10");
             foreach (DataRow dr in dt.Rows)
             {

@@ -39,9 +39,9 @@ namespace ProyectoPoo
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(285, 441);
+            this.pictureBox1.Location = new System.Drawing.Point(244, 382);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 23);
+            this.pictureBox1.Size = new System.Drawing.Size(142, 20);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -51,9 +51,9 @@ namespace ProyectoPoo
             // 
             // frmDesign
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 519);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmDesign";
             this.Text = "frmDesign";
