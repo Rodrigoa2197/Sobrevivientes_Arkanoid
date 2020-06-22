@@ -90,9 +90,10 @@ namespace ProyectoPoo
             {
                 for (int j = 0; j < xAxis; j++)
                 {
+                    //Crear el bloque
                     cpb[i, j] = new CustomPictureBox();
-
-                    if (i == 0)
+                    //Definir nivel del bloque
+                    if (i == 1)
                         cpb[i, j].Golpes = 2;
                     else
                         cpb[i, j].Golpes = 1;
@@ -162,13 +163,15 @@ namespace ProyectoPoo
             }
 
         }
-
+        //Evento tick del timer
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //Confirmar si ha empezado el juego
             if (!DatosJuego.juegoIniciado)
                 return;
             try
             {
+                //Invocar el delegate
                 BallMovements?.Invoke();
             }
             catch (OutBoundsException ex)
@@ -233,7 +236,7 @@ namespace ProyectoPoo
 
             if (ball.Bottom > Height)
                 throw new OutBoundsException("");
-
+            //Verificar limites laterales
             if (ball.Left < 0 || ball.Right > Width)
             {
                 DatosJuego.dirX = -DatosJuego.dirX;
@@ -246,35 +249,33 @@ namespace ProyectoPoo
                 return;
 
             }
-            //Manera en que colisionan con cpb.
+            //Manera en que colisionan con algun bloque.
             for (int i = 4; i >= 0; i--)
             {
                 for (int j = 0; j < 10; j++)
                 {
                     if (cpb[i, j] != null && ball.Bounds.IntersectsWith(cpb[i, j].Bounds))
                     {
-                        DatosJuego.score += (int) (cpb[i, j].Golpes * DatosJuego.ticksCount);
+                       
                         cpb[i, j].Golpes--;
 
-                        if (cpb[i, j].Golpes == 0)
+                        if (cpb[i, j].Golpes == 1)
                         {
-                            Controls.Remove(cpb[i, j]);
-                            cpb[i, j] = null;
-
-                            remainingPb--;
+                           cpb[i,j].BackgroundImage = Image.FromFile("../../Resources/tb2.png");
                             
                         }
-                        
-                        else if (cpb[i, j].Tag.Equals("blinded"))
-                            cpb[i, j].BackgroundImage = Image.FromFile("../../Resources/tb2.png");
+
+                        DatosJuego.score += 3;
+                        if (cpb[i, j].Golpes == 0)
+                        {
+                            Controls.Remove(cpb[i,j]);
+                            cpb[i, j] = null;
+                            score.Text = DatosJuego.score.ToString();
+                            CheckGame();
+                        }
 
                         DatosJuego.dirY = -DatosJuego.dirY;
-
-                        score.Text = DatosJuego.score.ToString();
-
-                        if (remainingPb == 0)
-                        {
-                            timer1.Stop();
+                        
                             
                             
                               /*PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
@@ -282,7 +283,7 @@ namespace ProyectoPoo
                                 this.Hide();
                                 FinishGame?.Invoke();*/
               
-                        }
+                        
              
                         return;
                     }
@@ -299,7 +300,7 @@ namespace ProyectoPoo
         private void CheckGame()
         {
             //Verificar que no hayan más bloques
-            if (remainingPb == 0)
+            if (DatosJuego.score == 180)
             {
                 //detener timer
                 timer1.Stop();
