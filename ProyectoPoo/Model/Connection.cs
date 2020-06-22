@@ -9,6 +9,7 @@ namespace ProyectoPoo
             database = "ProyectoPoo",
             //database = "POOproyecto",
             userId = "postgres",
+<<<<<<< HEAD
             //password = "gaseosa1234";
             password = "00303318";
             //password = "uca";
@@ -17,6 +18,17 @@ namespace ProyectoPoo
             $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";
         
         public static DataTable ExecuteQuery(string query)
+=======
+            password = "uca";
+            //password = "00303318";
+            //password = "gaseosa1234";
+                
+
+            private static string sConnection =
+                $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";
+
+            public static DataTable ExecuteQuery(string query)
+>>>>>>> caa6b64bfeab95d44a72ff74b4567962f2e337a3
         {
             NpgsqlConnection connection = new NpgsqlConnection(sConnection);
             
