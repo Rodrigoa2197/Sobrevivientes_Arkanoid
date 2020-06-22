@@ -46,9 +46,9 @@ namespace ProyectoPoo
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(99, 49);
+            this.label1.Location = new System.Drawing.Point(113, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(743, 171);
+            this.label1.Size = new System.Drawing.Size(849, 228);
             this.label1.TabIndex = 0;
             this.label1.Text = "INGRESE SU USUARIO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -56,9 +56,10 @@ namespace ProyectoPoo
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(333, 353);
+            this.textBox1.Location = new System.Drawing.Point(381, 471);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(269, 23);
+            this.textBox1.Size = new System.Drawing.Size(307, 27);
             this.textBox1.TabIndex = 1;
             // 
             // button2
@@ -73,9 +74,10 @@ namespace ProyectoPoo
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(303, 493);
+            this.button2.Location = new System.Drawing.Point(346, 658);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(339, 88);
+            this.button2.Size = new System.Drawing.Size(387, 118);
             this.button2.TabIndex = 3;
             this.button2.Text = "INICIAR";
             this.button2.UseVisualStyleBackColor = false;
@@ -83,15 +85,16 @@ namespace ProyectoPoo
             // 
             // frmRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(928, 621);
+            this.ClientSize = new System.Drawing.Size(1061, 828);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmRegister";
             this.Text = "frmRegister";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

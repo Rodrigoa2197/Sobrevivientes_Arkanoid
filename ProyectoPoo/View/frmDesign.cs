@@ -74,14 +74,22 @@ namespace ProyectoPoo
 
             LoadTile();
             timer1.Start();
+            //EDITADO POR RODRIGO
+            WinningGame = () =>
+            {
+                PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
+                MessageBox.Show("¡Felicidades, Has ganado la partida!");
+                this.Hide();
+                Form1 fr = new Form1();
+                fr.Show();
+            };
         }
 
         private void LoadTile()
         {
             //Creando el diseno de los cuadros atraves del custompicture box.
-            int xAxis = 10;
-            int yAxis = 5;
-
+            int xAxis = 10, yAxis = 5;
+            remainingPb = xAxis * yAxis;
             int pbHeight = (int) (Height * 0.3) / yAxis;
             int pbWidth = Width / xAxis;
 
@@ -215,7 +223,8 @@ namespace ProyectoPoo
                             break;
                         default:
                             throw new WrongKeyException("Presione Space para iniciar el juego");
-                    }
+                            break;
+                    } 
                 }
             }
             catch (WrongKeyException ex)
@@ -256,36 +265,36 @@ namespace ProyectoPoo
                 {
                     if (cpb[i, j] != null && ball.Bounds.IntersectsWith(cpb[i, j].Bounds))
                     {
-                       
+                       DatosJuego.score += (int)(cpb[i,j].Golpes*DatosJuego.ticksCount);
                         cpb[i, j].Golpes--;
-
-                        if (cpb[i, j].Golpes == 1)
-                        {
-                           cpb[i,j].BackgroundImage = Image.FromFile("../../Resources/tb2.png");
-                            
-                        }
-
-                        DatosJuego.score += 3;
+                       // DatosJuego.score += 3;
+                        
                         if (cpb[i, j].Golpes == 0)
                         {
                             Controls.Remove(cpb[i,j]);
                             cpb[i, j] = null;
+                            remainingPb--;
                             score.Text = DatosJuego.score.ToString();
                             CheckGame();
+                        } 
+                        else if (cpb[i, j].Golpes == 1)
+                        {
+                            cpb[i,j].BackgroundImage = Image.FromFile("../../Resources/tb2.png");
+                            
                         }
 
                         DatosJuego.dirY = -DatosJuego.dirY;
-                        
-                            
-                            
+                        score.Text = DatosJuego.score.ToString();
                               /*PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
                                 MessageBox.Show("Has ganado!");
                                 this.Hide();
                                 FinishGame?.Invoke();*/
-              
-                        
-             
-                        return;
+                              if (remainingPb == 0)
+                              {
+                                  WinningGame?.Invoke();
+                              }
+
+                              return;
                     }
                 }
             }
@@ -422,34 +431,6 @@ namespace ProyectoPoo
                 window.Show();
                 this.Hide();
             }
-            
         }
-<<<<<<< HEAD
-=======
-
-        
->>>>>>> refs/remotes/origin/master
-        private void frmDesign_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("¿Seguro que desea salir? ", 
-                "ARKANOID GAME ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-        }
-<<<<<<< HEAD
-=======
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-
->>>>>>> refs/remotes/origin/master
     }
 }

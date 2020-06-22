@@ -47,7 +47,7 @@ namespace ProyectoPoo
            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
            this.label1.Location = new System.Drawing.Point(0, 0);
            this.label1.Name = "label1";
-           this.label1.Size = new System.Drawing.Size(605, 114);
+           this.label1.Size = new System.Drawing.Size(691, 152);
            this.label1.TabIndex = 1;
            this.label1.Text = "TOP 10";
            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -59,9 +59,10 @@ namespace ProyectoPoo
            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular,
                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-           this.button1.Location = new System.Drawing.Point(206, 117);
+           this.button1.Location = new System.Drawing.Point(235, 156);
+           this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
            this.button1.Name = "button1";
-           this.button1.Size = new System.Drawing.Size(188, 48);
+           this.button1.Size = new System.Drawing.Size(215, 64);
            this.button1.TabIndex = 2;
            this.button1.Text = "MENU";
            this.button1.UseVisualStyleBackColor = false;
@@ -69,7 +70,7 @@ namespace ProyectoPoo
            // 
            // ControlTop
            // 
-           this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+           this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
            this.BackColor = System.Drawing.SystemColors.ControlDark;
            this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
@@ -77,8 +78,9 @@ namespace ProyectoPoo
            this.Controls.Add(this.button1);
            this.Controls.Add(this.label1);
            this.DoubleBuffered = true;
+           this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
            this.Name = "ControlTop";
-           this.Size = new System.Drawing.Size(605, 783);
+           this.Size = new System.Drawing.Size(691, 1044);
            this.Load += new System.EventHandler(this.ControlTop_Load);
            this.ResumeLayout(false);
        }
