@@ -24,6 +24,7 @@ namespace ProyectoPoo
         private PictureBox[] hearts;
 
         private delegate void BallActions();
+        private Player currentPlayer;
 
         private readonly BallActions BallMovements;
         public Action FinishGame, WinningGame;
@@ -182,14 +183,15 @@ namespace ProyectoPoo
                     UpdateElements();
 
                     if (DatosJuego.lifes == 0)
-                    {
-                        throw new NoRemainingLifesException("");
-                    }
+                    
+                        throw new NoRemainingLifesException("Has Perdido!:(");
+                    
                 }
                 catch (NoRemainingLifesException ex2)
                 {
                     timer1.Stop();
                     FinishGame?.Invoke();
+                    
                 }
             }
         }
@@ -222,7 +224,7 @@ namespace ProyectoPoo
         //Creando los movimeinto de la pelota a traves de toda la ventana del juego.  
         private void rebotarPelota()
         {
-
+            //Rebote en el lado izquierodo o derecho de la ventana.
             if (ball.Top < scorePanel.Height)
             {
                 DatosJuego.dirY = -DatosJuego.dirY;
@@ -237,14 +239,14 @@ namespace ProyectoPoo
                 DatosJuego.dirX = -DatosJuego.dirX;
                 return;
             }
-
+            // Rebote con el jugador.
             if (ball.Bounds.IntersectsWith(pictureBox1.Bounds))
             {
                 DatosJuego.dirY = -DatosJuego.dirY;
                 return;
 
             }
-
+            //Manera en que colisionan con cpb.
             for (int i = 4; i >= 0; i--)
             {
                 for (int j = 0; j < 10; j++)
@@ -260,7 +262,9 @@ namespace ProyectoPoo
                             cpb[i, j] = null;
 
                             remainingPb--;
+                            
                         }
+                        
                         else if (cpb[i, j].Tag.Equals("blinded"))
                             cpb[i, j].BackgroundImage = Image.FromFile("../../Resources/tb2.png");
 
@@ -269,8 +273,17 @@ namespace ProyectoPoo
                         score.Text = DatosJuego.score.ToString();
 
                         if (remainingPb == 0)
-                            WinningGame?.Invoke();
-
+                        {
+                            timer1.Stop();
+                            
+                            
+                              /*PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
+                                MessageBox.Show("Has ganado!");
+                                this.Hide();
+                                FinishGame?.Invoke();*/
+              
+                        }
+             
                         return;
                     }
                 }
@@ -282,6 +295,28 @@ namespace ProyectoPoo
             ball.Left += DatosJuego.dirX;
             ball.Top += DatosJuego.dirY;
         }
+        
+        private void CheckGame()
+        {
+            //Verificar que no hayan más bloques
+            if (remainingPb == 0)
+            {
+                //detener timer
+                timer1.Stop();
+                //Agregar puntaje
+                PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
+                MessageBox.Show("Felicidades ha completado el juego.",
+                    "Arkanoid", MessageBoxButtons.OK);
+                //Cambiar de menu
+                Form1 fr = new Form1();
+
+                //Reiniciar valores de juego para permitir juego nuevo
+                DatosJuego.lifes = 3;
+                DatosJuego.score = 0;
+                fr.Show();
+            }
+        }
+        //Se encargara de inicializzr los elementos arriba de la ventana el puntaje y las vidas.
         private void ScoresPanel()
         {
             // Instanciar panel
@@ -297,7 +332,7 @@ namespace ProyectoPoo
             
             
             #region Label + PictureBox
-            // Instanciar pb
+            // Instanciar pictureBox
             heart = new PictureBox();
 
             heart.Height = heart.Width = scorePanel.Height;
@@ -375,16 +410,23 @@ namespace ProyectoPoo
         private void UpdateElements()
         {
             remainingLifes.Text = "x " + DatosJuego.lifes.ToString();
-
             scorePanel.Controls.Remove(hearts[DatosJuego.lifes]);
             hearts[DatosJuego.lifes] = null;
             if (DatosJuego.lifes == 0)
             {
-                MessageBox.Show("Ha perdido!");
+                MessageBox.Show("Has perdido:(!");
                 Form1 window = new Form1();
+                DatosJuego.lifes = 3;
+                DatosJuego.score = 0;
                 window.Show();
                 this.Hide();
             }
+
+            if (remainingPb == 0)
+            {
+                CheckGame();
+            }
+            
         }
         
         
