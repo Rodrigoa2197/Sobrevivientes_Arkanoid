@@ -56,11 +56,11 @@ namespace ProyectoPoo
         {
             ScoresPanel();
             // Creando la barra de el jugador atraves de codigo
-            pictureBox1.BackgroundImage = Image.FromFile("../../Resources/Player.png");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Top = Height - pictureBox1.Height - 80;
+            picPlayer.BackgroundImage = Image.FromFile("../../Resources/Player.png");
+            picPlayer.BackgroundImageLayout = ImageLayout.Stretch;
+            picPlayer.Top = Height - picPlayer.Height - 80;
 
-            pictureBox1.Left = (Width / 2) - (pictureBox1.Width / 2);
+            picPlayer.Left = (Width / 2) - (picPlayer.Width / 2);
 
             //Creando la bola del juego atraves de codigo.
             ball = new PictureBox();
@@ -68,11 +68,12 @@ namespace ProyectoPoo
             ball.BackgroundImage = Image.FromFile("../../Resources/Ball.png");
             ball.BackgroundImageLayout = ImageLayout.Stretch;
 
-            ball.Top = pictureBox1.Top - ball.Height;
-            ball.Left = pictureBox1.Left + (pictureBox1.Width / 2) - (ball.Width / 2);
+            ball.Top = picPlayer.Top - ball.Height;
+            ball.Left = picPlayer.Left + (picPlayer.Width / 2) - (ball.Width / 2);
             Controls.Add(ball);
 
             LoadTile();
+<<<<<<< HEAD
             timer1.Start();
             //EDITADO POR RODRIGO
             WinningGame = () =>
@@ -83,6 +84,9 @@ namespace ProyectoPoo
                 Form1 fr = new Form1();
                 fr.Show();
             };
+=======
+            tmBox.Start();
+>>>>>>> refs/remotes/origin/master
         }
 
         private void LoadTile()
@@ -156,17 +160,17 @@ namespace ProyectoPoo
             //Movimiento de barra y pelota cuando el juego no ha iniciado.
             if (!DatosJuego.juegoIniciado)
             {
-                if (e.X < (Width - pictureBox1.Width))
+                if (e.X < (Width - picPlayer.Width))
                 {
-                    pictureBox1.Left = e.X;
-                    ball.Left = pictureBox1.Left + (pictureBox1.Width / 2) - (ball.Width / 2);
+                    picPlayer.Left = e.X;
+                    ball.Left = picPlayer.Left + (picPlayer.Width / 2) - (ball.Width / 2);
                 }
             }
             //Movimiento de barra y pelota cuando el juego ya inicio.
             else
             {
-                if (e.X < (Width - pictureBox1.Width))
-                    pictureBox1.Left = e.X;
+                if (e.X < (Width - picPlayer.Width))
+                    picPlayer.Left = e.X;
 
             }
 
@@ -188,7 +192,7 @@ namespace ProyectoPoo
                 {
                     DatosJuego.lifes--;
                     DatosJuego.juegoIniciado = false;
-                    timer1.Stop();
+                    tmBox.Stop();
 
                     RepositionElements();
                     UpdateElements();
@@ -200,7 +204,7 @@ namespace ProyectoPoo
                 }
                 catch (NoRemainingLifesException ex2)
                 {
-                    timer1.Stop();
+                    tmBox.Stop();
                     FinishGame?.Invoke();
                     
                 }
@@ -219,7 +223,7 @@ namespace ProyectoPoo
                     {
                         case Keys.Space:
                             DatosJuego.juegoIniciado = true;
-                            timer1.Start();
+                            tmBox.Start();
                             break;
                         default:
                             throw new WrongKeyException("Presione Space para iniciar el juego");
@@ -252,7 +256,7 @@ namespace ProyectoPoo
                 return;
             }
             // Rebote con el jugador.
-            if (ball.Bounds.IntersectsWith(pictureBox1.Bounds))
+            if (ball.Bounds.IntersectsWith(picPlayer.Bounds))
             {
                 DatosJuego.dirY = -DatosJuego.dirY;
                 return;
@@ -312,7 +316,7 @@ namespace ProyectoPoo
             if (DatosJuego.score == 150)
             {
                 //detener timer
-                timer1.Stop();
+                tmBox.Stop();
                 //Agregar puntaje
                 PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
                 MessageBox.Show("Felicidades ha completado el juego.",
@@ -411,9 +415,9 @@ namespace ProyectoPoo
         }
         private void RepositionElements()
         {
-            pictureBox1.Left = (Width / 2) - (pictureBox1.Width / 2);
-            ball.Top = pictureBox1.Top - ball.Height;
-            ball.Left = pictureBox1.Left + (pictureBox1.Width / 2) - (ball.Width / 2);
+            picPlayer.Left = (Width / 2) - (picPlayer.Width / 2);
+            ball.Top = picPlayer.Top - ball.Height;
+            ball.Left = picPlayer.Left + (picPlayer.Width / 2) - (ball.Width / 2);
         }
 
         // Actualizacion de elementos luego de perder una vida

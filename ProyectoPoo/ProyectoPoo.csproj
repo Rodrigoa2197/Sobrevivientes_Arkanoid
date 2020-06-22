@@ -94,8 +94,13 @@
     <Compile Include="Model\Connection.cs" />
     <Compile Include="Model\CustomPictureBox.cs" />
     <Compile Include="Model\DatosJuego.cs" />
+<<<<<<< HEAD
     <Compile Include="Model\EmptyUsuarioException.cs" />
     <Compile Include="Model\ExceededMaxCharactesException.cs" />
+=======
+    <Compile Include="Model\EmptyNicknameException.cs" />
+    <Compile Include="Model\ExceededMaxCharactersException.cs" />
+>>>>>>> refs/remotes/origin/master
     <Compile Include="Model\NoRemainingLifesException.cs" />
     <Compile Include="Model\OutBoundsException.cs" />
     <Compile Include="Model\Player.cs" />

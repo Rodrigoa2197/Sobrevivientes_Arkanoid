@@ -19,6 +19,7 @@ namespace ProyectoPoo
         {
             LoadPlayers();
         }
+        //Metodo para cargar a los jugadores en el top.
         private void LoadPlayers()
         {
             var playerList = PlayerDAO.ObtainTopPlayers();
@@ -39,6 +40,7 @@ namespace ProyectoPoo
                         players[i, j].Text = playerList[i].Puntaje.ToString();
                         players[i, j].Left = Width / 2 + sampleLeft;
                     }
+                    //Ajustar el tamano de los nombres de los jugadores.
                     players[i, j].Top = sampleTop + 19 * i;
                     players[i, j].Height += 2;
                     players[i, j].Width += 50;
