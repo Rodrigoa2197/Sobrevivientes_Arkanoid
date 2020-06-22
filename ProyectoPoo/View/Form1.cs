@@ -43,7 +43,7 @@ namespace ProyectoPoo
                 design.Show();
                 this.Hide();
             };
-
+            Controls.Add(ct);
         }
 
         private void button2_Click(object sender, EventArgs e)
