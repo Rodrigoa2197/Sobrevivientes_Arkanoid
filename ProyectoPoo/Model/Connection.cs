@@ -8,7 +8,6 @@ namespace ProyectoPoo
         private static string host = "127.0.0.1",
             database = "ProyectoPoo",
             userId = "postgres",
-<<<<<<< HEAD
             password = "sebas";
             //password = "uca";
             //password = "00303318";
@@ -16,12 +15,7 @@ namespace ProyectoPoo
                 
 
             private static string sConnection =
-=======
-            password = "gaseosa1234";
-           
-        private static string sConnection =
->>>>>>> refs/remotes/origin/master
-            $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";
+                $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";
         
         public static DataTable ExecuteQuery(string query)
         {
