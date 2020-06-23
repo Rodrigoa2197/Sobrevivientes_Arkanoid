@@ -6,9 +6,9 @@ namespace ProyectoPoo
     public static class Connection
     {
         private static string host = "127.0.0.1",
-            database = "POOproyecto",
+            database = "ProyectoPoo",
             userId = "postgres",
-            password = "uca";
+            password = "sebas";
             //password = "00303318";
             //password = "gaseosa1234";
                 
