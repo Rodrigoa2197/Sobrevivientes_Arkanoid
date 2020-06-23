@@ -306,7 +306,7 @@ namespace ProyectoPoo
                 tmBox.Stop();
                 //Agregar puntaje
                 PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
-                MessageBox.Show("Felicidades ha completado el juego.",
+                MessageBox.Show("Has ganado!",
                     "Arkanoid", MessageBoxButtons.OK);
                 //Cambiar de menu
                 Form1 fr = new Form1();
