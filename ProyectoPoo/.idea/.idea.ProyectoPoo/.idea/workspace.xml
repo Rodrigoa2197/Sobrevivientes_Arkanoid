@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b9b943a8-feae-4a7e-af95-95f81ba6e40a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Model/PlayerDAO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/PlayerDAO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/ProyectoPoo.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ProyectoPoo.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/ProyectoPoo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ProyectoPoo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/ProyectoPoo.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ProyectoPoo.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/ProyectoPoo.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ProyectoPoo.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/ProyectoPoo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ProyectoPoo.pdb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/View/frmDesign.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/View/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/View/ControlTop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/PlayerDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/DatosJuego.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Model/Connection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/View/frmTop.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/frmLevel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/View/frmTop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/frmDesign.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/View/frmRegister.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/View/frmRegister.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/frmRegister.Designer.cs" />
+        <option value="$PROJECT_DIR$/frmTop.Designer.cs" />
+        <option value="$PROJECT_DIR$/frmRegister.cs" />
+        <option value="$PROJECT_DIR$/frmDesign.cs" />
+        <option value="$PROJECT_DIR$/Form1.cs" />
+        <option value="$PROJECT_DIR$/frmLevel.cs" />
+        <option value="$PROJECT_DIR$/frmTop.cs" />
+        <option value="$PROJECT_DIR$/Connection.cs" />
+        <option value="$PROJECT_DIR$/View/frmTop.Designer.cs" />
+        <option value="$PROJECT_DIR$/View/frmRegister.cs" />
+        <option value="$PROJECT_DIR$/View/ControlTop.cs" />
+        <option value="$PROJECT_DIR$/Model/DatosJuego.cs" />
+        <option value="$PROJECT_DIR$/Model/Connection.cs" />
+        <option value="$PROJECT_DIR$/View/frmDesign.cs" />
+        <option value="$PROJECT_DIR$/Model/PlayerDAO.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1d6MXKU1Qfmzt7sjT2X4TaDb68N" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ProyectoPoo" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ProyectoPoo.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9b943a8-feae-4a7e-af95-95f81ba6e40a" name="Default Changelist" comment="" />
+      <created>1591741129265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591741129265</updated>
+      <workItem from="1591741132972" duration="2735000" />
+      <workItem from="1592087102031" duration="112000" />
+      <workItem from="1592435957221" duration="2350000" />
+      <workItem from="1592438395949" duration="1803000" />
+      <workItem from="1592440453245" duration="2327000" />
+      <workItem from="1592496572097" duration="10670000" />
+      <workItem from="1592597716810" duration="2510000" />
+      <workItem from="1592673543283" duration="3041000" />
+      <workItem from="1592766903329" duration="4059000" />
+      <workItem from="1592861937843" duration="4910000" />
+      <workItem from="1592940058184" duration="1178000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state width="2005" height="67" key="GridCell.Tab.0.bottom" timestamp="1592893949025">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="67" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1592893949025" />
+    <state width="2005" height="67" key="GridCell.Tab.0.center" timestamp="1592893949025">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="67" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1592893949025" />
+    <state width="2005" height="67" key="GridCell.Tab.0.left" timestamp="1592893949025">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="67" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1592893949025" />
+    <state width="2005" height="67" key="GridCell.Tab.0.right" timestamp="1592893949025">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="67" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1592893949025" />
+    <state x="616" y="288" key="Rider.ProjectTemplateDialog.Size" timestamp="1592438290984">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="616" y="288" key="Rider.ProjectTemplateDialog.Size/0.0.2048.1112@0.0.2048.1112" timestamp="1592438290984" />
+    <state x="457" y="176" key="SettingsEditor" timestamp="1592437172457">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="457" y="176" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1592437172457" />
+    <state x="736" y="260" key="VCS.ChangeListViewerDialog" timestamp="1592436292171">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="736" y="260" key="VCS.ChangeListViewerDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1592436292171" />
+  </component>
+</project>

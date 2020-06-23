@@ -8,8 +8,8 @@ namespace ProyectoPoo
         private static string host = "127.0.0.1",
             database = "ProyectoPoo",
             userId = "postgres",
-            password = "sebas";
-            //password = "00303318";
+            //password = "sebas";
+            password = "00303318";
             //password = "gaseosa1234";
                 
 
