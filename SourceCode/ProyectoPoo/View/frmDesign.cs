@@ -12,6 +12,8 @@ namespace ProyectoPoo
         private Panel scorePanel, blackPanel;
         private Label remainingLifes, score;
         private PictureBox ball;
+        public delegate void GetPuntaje(int score);
+        public GetPuntaje gp;
 
         private double tiempoTranscurido = 0, tiempoLimite = 4;
         private int remainingPb = 0;
@@ -305,7 +307,10 @@ namespace ProyectoPoo
                 //detener timer
                 tmBox.Stop();
                 //Agregar puntaje
-                MessageBox.Show("¡Felicidades, has ganado :)!",
+                var finalScore = Convert.ToInt32(score.Text);
+                gp?.Invoke(finalScore);
+                PlayerDAO.CreateNewScore(1, finalScore);
+                MessageBox.Show("¡Felicidades, has ganado! Tu puntuacion fue de " + finalScore + "puntos",
                     "Arkanoid", MessageBoxButtons.OK);
                 //Cambiar de menu
                 Form1 fr = new Form1();
@@ -414,7 +419,11 @@ namespace ProyectoPoo
             hearts[DatosJuego.lifes] = null;
             if (DatosJuego.lifes == 0)
             {
-                MessageBox.Show("¡Has perdido :(!");
+                var finalScore = Convert.ToInt32(score.Text);
+                gp?.Invoke(finalScore);
+                PlayerDAO.CreateNewScore(1, finalScore);
+                MessageBox.Show("Has perdido! Tu puntuacion fue de " + finalScore + " puntos",
+                    "Arkanoid", MessageBoxButtons.OK);
                 Form1 window = new Form1();
                 DatosJuego.lifes = 3;
                 DatosJuego.score = 0;

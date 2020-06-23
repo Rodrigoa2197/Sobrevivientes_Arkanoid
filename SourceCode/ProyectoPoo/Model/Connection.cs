@@ -9,8 +9,8 @@ namespace ProyectoPoo
             database = "ProyectoPoo",
             userId = "postgres",
             //password = "sebas";
-            password = "00303318";
-            //password = "gaseosa1234";
+            //password = "00303318";
+            password = "gaseosa1234";
                 
 
 
