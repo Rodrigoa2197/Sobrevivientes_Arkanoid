@@ -38,14 +38,14 @@ namespace ProyectoPoo
            // 
            // label1
            // 
-           this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
            this.label1.BackColor = System.Drawing.Color.Transparent;
+           this.label1.Dock = System.Windows.Forms.DockStyle.Top;
            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-           this.label1.Location = new System.Drawing.Point(116, 7);
+           this.label1.Location = new System.Drawing.Point(0, 0);
            this.label1.Name = "label1";
-           this.label1.Size = new System.Drawing.Size(297, 99);
+           this.label1.Size = new System.Drawing.Size(519, 99);
            this.label1.TabIndex = 1;
            this.label1.Text = "TOP 10";
            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -56,9 +56,9 @@ namespace ProyectoPoo
            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-           this.button1.Location = new System.Drawing.Point(328, 90);
+           this.button1.Location = new System.Drawing.Point(177, 101);
            this.button1.Name = "button1";
-           this.button1.Size = new System.Drawing.Size(174, 65);
+           this.button1.Size = new System.Drawing.Size(161, 42);
            this.button1.TabIndex = 2;
            this.button1.Text = "MENU";
            this.button1.UseVisualStyleBackColor = false;

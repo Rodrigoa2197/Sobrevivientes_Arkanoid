@@ -94,6 +94,8 @@
     <Compile Include="Model\Connection.cs" />
     <Compile Include="Model\CustomPictureBox.cs" />
     <Compile Include="Model\DatosJuego.cs" />
+    <Compile Include="Model\EmptyNicknameException.cs" />
+    <Compile Include="Model\ExceededMaxCharactersException.cs" />
     <Compile Include="Model\NoRemainingLifesException.cs" />
     <Compile Include="Model\OutBoundsException.cs" />
     <Compile Include="Model\Player.cs" />

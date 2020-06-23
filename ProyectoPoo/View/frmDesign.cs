@@ -56,11 +56,11 @@ namespace ProyectoPoo
         {
             ScoresPanel();
             // Creando la barra de el jugador atraves de codigo
-            pictureBox1.BackgroundImage = Image.FromFile("../../Resources/Player.png");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Top = Height - pictureBox1.Height - 80;
+            picPlayer.BackgroundImage = Image.FromFile("../../Resources/Player.png");
+            picPlayer.BackgroundImageLayout = ImageLayout.Stretch;
+            picPlayer.Top = Height - picPlayer.Height - 80;
 
-            pictureBox1.Left = (Width / 2) - (pictureBox1.Width / 2);
+            picPlayer.Left = (Width / 2) - (picPlayer.Width / 2);
 
             //Creando la bola del juego atraves de codigo.
             ball = new PictureBox();
@@ -68,12 +68,12 @@ namespace ProyectoPoo
             ball.BackgroundImage = Image.FromFile("../../Resources/Ball.png");
             ball.BackgroundImageLayout = ImageLayout.Stretch;
 
-            ball.Top = pictureBox1.Top - ball.Height;
-            ball.Left = pictureBox1.Left + (pictureBox1.Width / 2) - (ball.Width / 2);
+            ball.Top = picPlayer.Top - ball.Height;
+            ball.Left = picPlayer.Left + (picPlayer.Width / 2) - (ball.Width / 2);
             Controls.Add(ball);
 
             LoadTile();
-            timer1.Start();
+            tmBox.Start();
         }
 
         private void LoadTile()
@@ -90,9 +90,10 @@ namespace ProyectoPoo
             {
                 for (int j = 0; j < xAxis; j++)
                 {
+                    //Crear el bloque
                     cpb[i, j] = new CustomPictureBox();
-
-                    if (i == 0)
+                    //Definir nivel del bloque
+                    if (i == 1)
                         cpb[i, j].Golpes = 2;
                     else
                         cpb[i, j].Golpes = 1;
@@ -147,28 +148,30 @@ namespace ProyectoPoo
             //Movimiento de barra y pelota cuando el juego no ha iniciado.
             if (!DatosJuego.juegoIniciado)
             {
-                if (e.X < (Width - pictureBox1.Width))
+                if (e.X < (Width - picPlayer.Width))
                 {
-                    pictureBox1.Left = e.X;
-                    ball.Left = pictureBox1.Left + (pictureBox1.Width / 2) - (ball.Width / 2);
+                    picPlayer.Left = e.X;
+                    ball.Left = picPlayer.Left + (picPlayer.Width / 2) - (ball.Width / 2);
                 }
             }
             //Movimiento de barra y pelota cuando el juego ya inicio.
             else
             {
-                if (e.X < (Width - pictureBox1.Width))
-                    pictureBox1.Left = e.X;
+                if (e.X < (Width - picPlayer.Width))
+                    picPlayer.Left = e.X;
 
             }
 
         }
-
+        //Evento tick del timer
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //Confirmar si ha empezado el juego
             if (!DatosJuego.juegoIniciado)
                 return;
             try
             {
+                //Invocar el delegate
                 BallMovements?.Invoke();
             }
             catch (OutBoundsException ex)
@@ -177,7 +180,7 @@ namespace ProyectoPoo
                 {
                     DatosJuego.lifes--;
                     DatosJuego.juegoIniciado = false;
-                    timer1.Stop();
+                    tmBox.Stop();
 
                     RepositionElements();
                     UpdateElements();
@@ -189,7 +192,7 @@ namespace ProyectoPoo
                 }
                 catch (NoRemainingLifesException ex2)
                 {
-                    timer1.Stop();
+                    tmBox.Stop();
                     FinishGame?.Invoke();
                     
                 }
@@ -208,7 +211,7 @@ namespace ProyectoPoo
                     {
                         case Keys.Space:
                             DatosJuego.juegoIniciado = true;
-                            timer1.Start();
+                            tmBox.Start();
                             break;
                         default:
                             throw new WrongKeyException("Presione Space para iniciar el juego");
@@ -233,48 +236,46 @@ namespace ProyectoPoo
 
             if (ball.Bottom > Height)
                 throw new OutBoundsException("");
-
+            //Verificar limites laterales
             if (ball.Left < 0 || ball.Right > Width)
             {
                 DatosJuego.dirX = -DatosJuego.dirX;
                 return;
             }
             // Rebote con el jugador.
-            if (ball.Bounds.IntersectsWith(pictureBox1.Bounds))
+            if (ball.Bounds.IntersectsWith(picPlayer.Bounds))
             {
                 DatosJuego.dirY = -DatosJuego.dirY;
                 return;
 
             }
-            //Manera en que colisionan con cpb.
+            //Manera en que colisionan con algun bloque.
             for (int i = 4; i >= 0; i--)
             {
                 for (int j = 0; j < 10; j++)
                 {
                     if (cpb[i, j] != null && ball.Bounds.IntersectsWith(cpb[i, j].Bounds))
                     {
-                        DatosJuego.score += (int) (cpb[i, j].Golpes * DatosJuego.ticksCount);
+                       
                         cpb[i, j].Golpes--;
 
-                        if (cpb[i, j].Golpes == 0)
+                        if (cpb[i, j].Golpes == 1)
                         {
-                            Controls.Remove(cpb[i, j]);
-                            cpb[i, j] = null;
-
-                            remainingPb--;
+                           cpb[i,j].BackgroundImage = Image.FromFile("../../Resources/tb2.png");
                             
                         }
-                        
-                        else if (cpb[i, j].Tag.Equals("blinded"))
-                            cpb[i, j].BackgroundImage = Image.FromFile("../../Resources/tb2.png");
+
+                        DatosJuego.score += 3;
+                        if (cpb[i, j].Golpes == 0)
+                        {
+                            Controls.Remove(cpb[i,j]);
+                            cpb[i, j] = null;
+                            score.Text = DatosJuego.score.ToString();
+                            CheckGame();
+                        }
 
                         DatosJuego.dirY = -DatosJuego.dirY;
-
-                        score.Text = DatosJuego.score.ToString();
-
-                        if (remainingPb == 0)
-                        {
-                            timer1.Stop();
+                        
                             
                             
                               /*PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
@@ -282,7 +283,7 @@ namespace ProyectoPoo
                                 this.Hide();
                                 FinishGame?.Invoke();*/
               
-                        }
+                        
              
                         return;
                     }
@@ -299,10 +300,10 @@ namespace ProyectoPoo
         private void CheckGame()
         {
             //Verificar que no hayan más bloques
-            if (remainingPb == 0)
+            if (DatosJuego.score == 150)
             {
                 //detener timer
-                timer1.Stop();
+                tmBox.Stop();
                 //Agregar puntaje
                 PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
                 MessageBox.Show("Felicidades ha completado el juego.",
@@ -401,9 +402,9 @@ namespace ProyectoPoo
         }
         private void RepositionElements()
         {
-            pictureBox1.Left = (Width / 2) - (pictureBox1.Width / 2);
-            ball.Top = pictureBox1.Top - ball.Height;
-            ball.Left = pictureBox1.Left + (pictureBox1.Width / 2) - (ball.Width / 2);
+            picPlayer.Left = (Width / 2) - (picPlayer.Width / 2);
+            ball.Top = picPlayer.Top - ball.Height;
+            ball.Left = picPlayer.Left + (picPlayer.Width / 2) - (ball.Width / 2);
         }
 
         // Actualizacion de elementos luego de perder una vida
@@ -414,20 +415,16 @@ namespace ProyectoPoo
             hearts[DatosJuego.lifes] = null;
             if (DatosJuego.lifes == 0)
             {
-                MessageBox.Show("Has perdido:(!");
+                MessageBox.Show("¡Has perdido :(!");
                 Form1 window = new Form1();
                 DatosJuego.lifes = 3;
                 DatosJuego.score = 0;
                 window.Show();
                 this.Hide();
             }
-
-            if (remainingPb == 0)
-            {
-                CheckGame();
-            }
             
         }
+
         
         private void frmDesign_FormClosing(object sender, FormClosingEventArgs e)
         {

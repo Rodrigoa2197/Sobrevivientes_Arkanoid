@@ -13,9 +13,10 @@ namespace ProyectoPoo
             //password = "gaseosa1234";
                 
 
-            private static string sConnection =
-                $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";
 
+            private static string sConnection =
+            $"Server={host};Port=5432;User Id={userId};Password={password};Database={database};";
+        
             public static DataTable ExecuteQuery(string query)
         {
             NpgsqlConnection connection = new NpgsqlConnection(sConnection);
