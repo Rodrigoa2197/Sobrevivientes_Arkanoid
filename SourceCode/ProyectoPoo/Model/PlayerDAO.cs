@@ -23,10 +23,10 @@ namespace ProyectoPoo
             }
         }
 
-        public static void CreateNewScore(int id_usuario, int score)
+        public static void CreateNewScore(int id_usuario, int puntaje)
         {
             Connection.ExecuteNonQuery("INSERT INTO PUNTAJE(id_usuario, puntaje) VALUES" +
-                                       $"({id_usuario},{score})");
+                                       $"({id_usuario},{puntaje})");
         }
 
         public static List<Player> ObtainTopPlayers()

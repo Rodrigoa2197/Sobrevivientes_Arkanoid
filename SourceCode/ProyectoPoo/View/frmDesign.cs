@@ -305,6 +305,8 @@ namespace ProyectoPoo
                 //detener timer
                 tmBox.Stop();
                 //Agregar puntaje
+                PlayerDAO.CreateNewScore(currentPlayer.id_usuario, Convert.ToInt32(score));
+                
                 MessageBox.Show("¡Felicidades, has ganado :)!",
                     "Arkanoid", MessageBoxButtons.OK);
                 //Cambiar de menu
@@ -414,6 +416,7 @@ namespace ProyectoPoo
             hearts[DatosJuego.lifes] = null;
             if (DatosJuego.lifes == 0)
             {
+                PlayerDAO.CreateNewScore(currentPlayer.id_usuario, Convert.ToInt32(score));
                 MessageBox.Show("¡Has perdido :(!");
                 Form1 window = new Form1();
                 DatosJuego.lifes = 3;
@@ -433,16 +436,5 @@ namespace ProyectoPoo
                 e.Cancel = true;
             }
         }
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-
     }
 }
