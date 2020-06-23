@@ -62,6 +62,7 @@ namespace ProyectoPoo
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmDesign_MouseMove);
             ((System.ComponentModel.ISupportInitialize) (this.picPlayer)).EndInit();
             this.ResumeLayout(false);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDesign_FormClosing);
         }
 
         private System.Windows.Forms.PictureBox picPlayer;

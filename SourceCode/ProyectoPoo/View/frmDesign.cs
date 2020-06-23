@@ -307,10 +307,16 @@ namespace ProyectoPoo
                 //detener timer
                 tmBox.Stop();
                 //Agregar puntaje
+<<<<<<< HEAD
                 var finalScore = Convert.ToInt32(score.Text);
                 gp?.Invoke(finalScore);
                 PlayerDAO.CreateNewScore(1, finalScore);
                 MessageBox.Show("¡Felicidades, has ganado! Tu puntuacion fue de " + finalScore + "puntos",
+=======
+                PlayerDAO.CreateNewScore(currentPlayer.id_usuario, Convert.ToInt32(score));
+                
+                MessageBox.Show("¡Felicidades, has ganado :)!",
+>>>>>>> 8b7dce6da950ad197df0064e5e581eed892297a6
                     "Arkanoid", MessageBoxButtons.OK);
                 //Cambiar de menu
                 Form1 fr = new Form1();
@@ -419,11 +425,16 @@ namespace ProyectoPoo
             hearts[DatosJuego.lifes] = null;
             if (DatosJuego.lifes == 0)
             {
+<<<<<<< HEAD
                 var finalScore = Convert.ToInt32(score.Text);
                 gp?.Invoke(finalScore);
                 PlayerDAO.CreateNewScore(1, finalScore);
                 MessageBox.Show("Has perdido! Tu puntuacion fue de " + finalScore + " puntos",
                     "Arkanoid", MessageBoxButtons.OK);
+=======
+                PlayerDAO.CreateNewScore(currentPlayer.id_usuario, Convert.ToInt32(score));
+                MessageBox.Show("¡Has perdido :(!");
+>>>>>>> 8b7dce6da950ad197df0064e5e581eed892297a6
                 Form1 window = new Form1();
                 DatosJuego.lifes = 3;
                 DatosJuego.score = 0;
@@ -442,16 +453,5 @@ namespace ProyectoPoo
                 e.Cancel = true;
             }
         }
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-
     }
 }
