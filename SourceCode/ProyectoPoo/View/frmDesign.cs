@@ -305,7 +305,6 @@ namespace ProyectoPoo
                 //detener timer
                 tmBox.Stop();
                 //Agregar puntaje
-                PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
                 MessageBox.Show("Has ganado!",
                     "Arkanoid", MessageBoxButtons.OK);
                 //Cambiar de menu
@@ -314,6 +313,7 @@ namespace ProyectoPoo
                 //Reiniciar valores de juego para permitir juego nuevo
                 DatosJuego.lifes = 3;
                 DatosJuego.score = 0;
+                DatosJuego.juegoIniciado = false;
                 fr.Show();
             }
         }
