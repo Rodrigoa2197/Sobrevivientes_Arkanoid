@@ -277,7 +277,7 @@ namespace ProyectoPoo
                         DatosJuego.dirY = -DatosJuego.dirY;
                         
                             
-                            
+                        PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
                               /*PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
                                 MessageBox.Show("Has ganado!");
                                 this.Hide();
@@ -305,7 +305,9 @@ namespace ProyectoPoo
                 //detener timer
                 tmBox.Stop();
                 //Agregar puntaje
-                MessageBox.Show("Has ganado!",
+                PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
+
+                MessageBox.Show("¡Felicidades, has ganado :)!",
                     "Arkanoid", MessageBoxButtons.OK);
                 //Cambiar de menu
                 Form1 fr = new Form1();
