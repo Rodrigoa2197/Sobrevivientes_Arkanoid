@@ -8,7 +8,7 @@ namespace ProyectoPoo
 {
     public static class PlayerDAO
     {
-        public static bool CreateNewPlayer(string usuario)
+        public static bool verifyPlayer(string usuario)
         {
             var dt = Connection.ExecuteQuery($"SELECT * FROM USUARIO WHERE usuario = '{usuario}'");
             if (dt.Rows.Count > 0)
@@ -20,6 +20,23 @@ namespace ProyectoPoo
                 Connection.ExecuteNonQuery("INSERT INTO USUARIO(usuario) VALUES" +
                                            $"('{usuario}')");
                 return false;
+            }
+        }
+        
+        public static int GetIdPlayer(string usuario)
+        {
+            var dt = Connection.ExecuteQuery($"SELECT * FROM USUARIO WHERE usuario = '{usuario}'");
+            if (dt.Rows.Count > 0)
+            {
+                var id = int.Parse(dt.Rows[0][0].ToString());
+                return id;
+            }
+            else
+            {
+                Connection.ExecuteNonQuery("INSERT INTO USUARIO(usuario) VALUES" +
+                                           $"('{usuario}')");
+                var datat = Connection.ExecuteQuery($"SELECT * FROM USUARIO WHERE usuario = '{usuario}'");
+                return Convert.ToInt32(datat.Rows[0][0].ToString());
             }
         }
 

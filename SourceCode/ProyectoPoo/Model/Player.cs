@@ -13,5 +13,11 @@ namespace ProyectoPoo
             Usuario = usuario;
             Puntaje = puntaje;
         }
+        
+        public Player(int idusuario, int puntaje)
+        {
+            id_usuario = idusuario;
+            Puntaje = puntaje;
+        }
     }
 }

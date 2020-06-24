@@ -28,22 +28,26 @@ namespace ProyectoPoo
          
         private void button1_Click(object sender, EventArgs e)
         {
-            ds = new frmDesign();
+            int localGetId;
+            //ds = new frmDesign();
             frmRegister window = new frmRegister();
             window.Show();
             window.gn = (string user) =>
             {
-                if (PlayerDAO.CreateNewPlayer(user))
+
+                if (PlayerDAO.verifyPlayer(user))
                 {
                     MessageBox.Show($"Bienvenido Nuevamente {user}");
+                    localGetId = PlayerDAO.GetIdPlayer(user);
                 }
                 else
                 {
                     MessageBox.Show($"Gracias por registrarte {user}");
+                    localGetId = PlayerDAO.GetIdPlayer(user);
                 }
-                currentPlayer = new Player(user,0);
+                currentPlayer = new Player(localGetId,0);
                 window.Dispose();
-                frmDesign design = new frmDesign();
+                frmDesign design = new frmDesign(currentPlayer);
                 design.Show();
                 this.Hide();
             };

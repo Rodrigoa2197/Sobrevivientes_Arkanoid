@@ -33,9 +33,10 @@ namespace ProyectoPoo
 
 
 
-        public frmDesign()
+        public frmDesign(Player registeredPlayer)
         {
             InitializeComponent();
+            currentPlayer = registeredPlayer;
             BallMovements = rebotarPelota;
             BallMovements += MoveBall;
 
@@ -302,7 +303,7 @@ namespace ProyectoPoo
                 tmBox.Stop();
                 //Agregar puntaje
 
-                var finalScore = Convert.ToInt32(score.Text);
+                var finalScore = Convert.ToInt32(currentPlayer.Puntaje);
                 gp?.Invoke(finalScore);
                 PlayerDAO.CreateNewScore(currentPlayer.id_usuario, finalScore);
                 MessageBox.Show("¡Felicidades, has ganado! Tu puntuacion fue de " + finalScore + "puntos",
@@ -415,13 +416,11 @@ namespace ProyectoPoo
             hearts[DatosJuego.lifes] = null;
             if (DatosJuego.lifes == 0)
             {
-
                 var finalScore = Convert.ToInt32(score.Text);
                 gp?.Invoke(finalScore);
-                PlayerDAO.CreateNewScore(1, finalScore);
+                PlayerDAO.CreateNewScore(currentPlayer.id_usuario, finalScore);
                 MessageBox.Show("Has perdido! Tu puntuacion fue de " + finalScore + " puntos",
                     "Arkanoid", MessageBoxButtons.OK);
-
                 Form1 window = new Form1();
                 DatosJuego.lifes = 3;
                 DatosJuego.score = 0;
