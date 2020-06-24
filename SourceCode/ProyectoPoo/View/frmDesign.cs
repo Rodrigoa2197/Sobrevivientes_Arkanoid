@@ -258,7 +258,6 @@ namespace ProyectoPoo
                 {
                     if (cpb[i, j] != null && ball.Bounds.IntersectsWith(cpb[i, j].Bounds))
                     {
-                       
                         cpb[i, j].Golpes--;
 
                         if (cpb[i, j].Golpes == 1)
@@ -278,12 +277,7 @@ namespace ProyectoPoo
 
                         DatosJuego.dirY = -DatosJuego.dirY;
                         
-                            
-                        PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
-                              /*PlayerDAO.CreateNewScore(currentPlayer.id_usuario, DatosJuego.score);
-                                MessageBox.Show("Has ganado!");
-                                this.Hide();
-                                FinishGame?.Invoke();*/
+                       
               
                         
              
@@ -424,7 +418,7 @@ namespace ProyectoPoo
 
                 var finalScore = Convert.ToInt32(score.Text);
                 gp?.Invoke(finalScore);
-                PlayerDAO.CreateNewScore(currentPlayer.id_usuario, finalScore);
+                PlayerDAO.CreateNewScore(1, finalScore);
                 MessageBox.Show("Has perdido! Tu puntuacion fue de " + finalScore + " puntos",
                     "Arkanoid", MessageBoxButtons.OK);
 
