@@ -26,7 +26,7 @@ namespace ProyectoPoo
         private PictureBox[] hearts;
 
         private delegate void BallActions();
-        private Player currentPlayer;
+        public Player currentPlayer;
 
         private readonly BallActions BallMovements;
         public Action FinishGame, WinningGame;
@@ -310,9 +310,8 @@ namespace ProyectoPoo
 
                 var finalScore = Convert.ToInt32(score.Text);
                 gp?.Invoke(finalScore);
-                PlayerDAO.CreateNewScore(1, finalScore);
+                PlayerDAO.CreateNewScore(currentPlayer.id_usuario, finalScore);
                 MessageBox.Show("¡Felicidades, has ganado! Tu puntuacion fue de " + finalScore + "puntos",
-
                     "Arkanoid", MessageBoxButtons.OK);
                 //Cambiar de menu
                 Form1 fr = new Form1();
@@ -425,7 +424,7 @@ namespace ProyectoPoo
 
                 var finalScore = Convert.ToInt32(score.Text);
                 gp?.Invoke(finalScore);
-                PlayerDAO.CreateNewScore(1, finalScore);
+                PlayerDAO.CreateNewScore(currentPlayer.id_usuario, finalScore);
                 MessageBox.Show("Has perdido! Tu puntuacion fue de " + finalScore + " puntos",
                     "Arkanoid", MessageBoxButtons.OK);
 
